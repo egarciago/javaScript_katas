@@ -11,12 +11,17 @@
 	</button>
 </div>
 <div>
-	<button type="button" onclick= document.write("Hi,i'm.")> 
+	<button type="button" onclick= myFunction2() > 
 		Click me
 	</button>
 </div>
 <div>
-	<button type="button" onclick= window.alert("Hi,again")> 
+	<button type="button" onclick= myFunction3()> 
+		Click me please.
+	</button>
+</div>
+<div>
+	<button type="button" onclick= myFunction4()> 
 		Click me please.
 	</button>
 </div>
@@ -24,6 +29,15 @@
 <script>
 	function myFunction(){
 		document.getElementById('demo').innerHTML = Date();
+    }
+    function myFunction2(){
+    	document.write("Only be used for testing.");
+    }
+    function myFunction3(){
+    	window.alert("Display data in alert box.")
+    }
+    function myFunction4(){
+    	console.log("Only debugging purposes.")
     }
 </script>
 </body>

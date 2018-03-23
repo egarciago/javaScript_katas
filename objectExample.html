@@ -1,9 +1,14 @@
-<!HTML>
+<!DOCTYPE html>
 <html>
 <head>
-<script type="text/javascript" src="persona.js"></script>
+<script type="text/javascript" src="/persona.js"></script>
 </head>
 <body>
-	<p id="ok"></p>
+	<h2>Utilizando un objeto</h2>
+	<p id="ok">Resultado</p>
+<script>
+	document.getElementById("ok").innerHTML = 
+		persona.nombre + " tiene una edad de: " + persona.edad;
+</script>
 </body>
 </html>

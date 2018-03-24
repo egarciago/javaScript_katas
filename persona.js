@@ -1,10 +1,11 @@
-var person ={
-	firstName: "Juan",
-	lastName: "Perez",
-	age: 30,
-	hairColor:"negro",
-	height:"6,0",
-	fullName: function(){
+
+function Person (firstName, lastName, age, hairColor, height){
+	this.firstName = firstName;
+	this.lastName = lastName;
+	this.age = age;
+	this.hairColor = hairColor;
+	this.height = height;
+	this.fullName = function(){
 		return this.firstName + " " + this.lastName;
 	}
-};
+}

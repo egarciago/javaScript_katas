@@ -1,4 +1,4 @@
-
+//Propotype definition
 function Person (firstName, lastName, age, hairColor, height){
 	this.firstName = firstName;
 	this.lastName = lastName;

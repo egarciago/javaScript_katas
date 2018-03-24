@@ -1,6 +1,10 @@
-var persona ={
-	nombre: "Juan Perez",
-	edad: 15,
-	colorPelo:"negro",
-	estatura:"6,0"
+var person ={
+	firstName: "Juan",
+	lastName: "Perez",
+	age: 30,
+	hairColor:"negro",
+	height:"6,0",
+	fullName: function(){
+		return this.firstName + " " + this.lastName;
+	}
 };

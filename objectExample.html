@@ -6,22 +6,38 @@
 <body>
 	<h2>Object Example </h2>
 	<p id="demo">Result prototype</p>
-	<p id="demo1">Result Object</p>
+	<p id="print">Result Object</p>
 <script>
-	var personObject = {
-		firstName: "Juan",
-		lastName: "Perez",
-		age: 30
-	};
-	personObject.fullName = function(){
-			return this.firstName + " " + this.lastName;
-	} 
 	var person1 = new Person("Juan","Perez",30,"Gold","6,3");
 	document.getElementById("demo").innerHTML = 
 		person1.fullName() + " is " + person1.age + " years old.";
 
-	document.getElementById("demo1").innerHTML = 
-		personObject.fullName() + " is " + personObject.age + " years old.";
+	var personObject1 = {
+		firstName: "Juan",
+		lastName: "Perez",
+		age: 30
+	};
+	var personObject2 = {
+		firstName: "Jose",
+		lastName: "Martinez",
+		age: 31
+	};
+
+	personObject1.fullName = fullName();
+	function fullName() {
+		return this.firstName + " " + this.lastName;
+	} 
+	
+	function printName(){
+		document.getElementById("print").innerHTML = personObject1.fullName;
+	}
+	printName();
+
+	
+
+	//document.getElementById("demo1").innerHTML = 
+	//	personObject.fullName() + " is " + personObject.age + " years old.";
+
 </script>
 </body>
 </html>

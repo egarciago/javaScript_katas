@@ -23,8 +23,7 @@
 		age: 31
 	};
 
-	personObject1.fullName = fullName();
-	function fullName() {
+	personObject1.fullName = function() {
 		return this.firstName + " " + this.lastName;
 	} 
 	

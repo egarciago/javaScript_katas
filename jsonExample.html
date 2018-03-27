@@ -15,8 +15,11 @@
 
 	obj = JSON.parse(text);
 	function printName(objeto){
-		document.getElementById("demo").innerHTML = 
-			objeto.employees[1].firstName + " " + objeto.employees[1].lastName + "<br>";
+		var text = "";
+		for (objet in objeto.employees){
+				text += objeto.employees[objet].firstName + " " + objeto.employees[objet].lastName + "<br>";
+		}
+		document.getElementById("demo").innerHTML = text;
 	}
 	printName(obj);
 

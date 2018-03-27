@@ -13,15 +13,15 @@
 	'{"firstName":"Juan","lastName":"Perez"},'+
 	'{"firstName":"Maria","lastName":"Castell"}]}';
 
-	obj = JSON.parse(text);
+	objeto = JSON.parse(text);
 	function printName(objeto){
 		var text = "";
-		for (objet in objeto.employees){
-				text += objeto.employees[objet].firstName + " " + objeto.employees[objet].lastName + "<br>";
+		for (obj in objeto.employees){
+				text += objeto.employees[obj].firstName + " " + objeto.employees[obj].lastName + "<br>";
 		}
 		document.getElementById("demo").innerHTML = text;
 	}
-	printName(obj);
+	printName(objeto);
 
 </script>
 </body>

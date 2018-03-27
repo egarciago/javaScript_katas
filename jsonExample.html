@@ -8,19 +8,17 @@
 	<p id="demo">Result </p>
 
 <script>
-	var text = '{"employes":['+
+	var text = '{"employees":['+
 	'{"firstName":"Pedro","lastName":,"Marte"},'+
 	'{"firstName":"Juan","lastName":"Perez"},'+
 	'{"firstName":"Maria","lastName":"Castell"}]}';
-	
 
-	function printName(){
-		document.getElementById("print").innerHTML = personObject1.fullName();
+	obj = JSON.parse(text);
+	function printName(objeto){
+		document.getElementById("demo").innerHTML = 
+			objeto.employees[1].firstName + " " + objeto.employees[1].lastName + "<br>";
 	}
-	printName();
-
-	//document.getElementById("demo1").innerHTML = 
-	//	personObject.fullName() + " is " + personObject.age + " years old.";
+	printName(obj);
 
 </script>
 </body>

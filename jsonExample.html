@@ -6,7 +6,7 @@
 <body>
 	<h2>JSON Example </h2>
 	<p id="demo">Result </p>
-
+	<p id="test">JSON show</p>
 <script>
 	var text = '{"employees":['+
 	'{"firstName":"Pedro","lastName":"Marte"},'+
@@ -18,10 +18,10 @@
  		"name": "Jhon Ditto",
  		"age": 25,
  		"cars": [
- 			{"name":"Honda","models":["Accord","Civic","CRV","City"]},
- 			{"name":"Nissan","models":["Sentra","GT-R","Frontier"]},
- 			{"name":"Toyota","models":["Camry","Corolla","LandCruiser"]},
- 			{"name":"BMW","models":["M5","M3","X5","X6"]},
+ 			{"name":"Honda", "models":["Accord","Civic","CRV","City"]},
+ 			{"name":"Nissan", "models":["Sentra","GT-R","Frontier"]},
+ 			{"name":"Toyota", "models":["Camry","Corolla","LandCruiser"]},
+ 			{"name":"BMW", "models":["M5","M3","X5","X6"]},
  			{"name":"Mercedes Benz", "models":["SL300","MP4"]}
  		]
  	}
@@ -34,8 +34,9 @@
  				retorno += obj.cars[carName].models[carModel] + "<br>"
  			}
  		}
- 		return retorno;
+ 		document.getElementById("test").innerHTML = retorno;
  	}
+ 	//document.getElementById("test").innerHTML = printMyObj(obj);
 
 	objeto = JSON.parse(text);
 	function printObjectData(objeto){

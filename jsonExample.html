@@ -28,15 +28,16 @@
 
  	function printMyObj(obj){
  		retorno = "";
- 		for (carName in obj){
- 			retorno += obj.cars[carName].name + "<br>";
+ 		for (carName in obj.cars){
+ 			retorno += "<b>" + obj.cars[carName].name + "</b><br>";
  			for (carModel in obj.cars[carName].models){
  				retorno += obj.cars[carName].models[carModel] + "<br>"
  			}
  		}
  		document.getElementById("test").innerHTML = retorno;
  	}
- 	//document.getElementById("test").innerHTML = printMyObj(obj);
+ 	//document.getElementById("test").innerHTML = 
+ 	printMyObj(myObj);
 
 	objeto = JSON.parse(text);
 	function printObjectData(objeto){

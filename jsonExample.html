@@ -29,14 +29,14 @@
  	function printMyObj(obj){
  		retorno = "";
  		for (carName in obj.cars){
- 			retorno += "<b>" + obj.cars[carName].name + "</b><br>";
+ 			retorno += "<h3>" + obj.cars[carName].name + "</h3>";
  			for (carModel in obj.cars[carName].models){
  				retorno += obj.cars[carName].models[carModel] + "<br>"
  			}
  		}
  		document.getElementById("test").innerHTML = retorno;
  	}
- 	//document.getElementById("test").innerHTML = 
+
  	printMyObj(myObj);
 
 	objeto = JSON.parse(text);

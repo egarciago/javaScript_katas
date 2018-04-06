@@ -2,11 +2,13 @@
 <html>
 <head>
 <script type="text/javascript" src="persona.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
 	<h2>JSON Examples </h2>
 	<p id="demo">Result </p>
 	<p id="test">JSON show</p>
+	<input type="button" value="Aceptar">
 <script>
 	var text = '{"employees":['+
 	'{"firstName":"Pedro","lastName":"Marte"},'+
@@ -34,10 +36,10 @@
  				retorno += obj.cars[carName].models[carModel] + "<br>"
  			}
  		}
- 		document.getElementById("test").innerHTML = retorno;
+ 		document.getElementById("#test").innerHTML = retorno;
  	}
 
- 	printMyObj(myObj);
+ 	$("button").click(printMyObj(myObj));
 
 	objeto = JSON.parse(text);
 	function printObjectData(objeto){

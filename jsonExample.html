@@ -27,7 +27,9 @@
  			{"name":"Mercedes Benz", "models":["SL300","MP4"]}
  		]
  	}
-
+ 	
+ 	$("button").click(printMyObj(myObj));
+ 	
  	function printMyObj(obj){
  		retorno = "";
  		for (carName in obj.cars){
@@ -36,10 +38,9 @@
  				retorno += obj.cars[carName].models[carModel] + "<br>"
  			}
  		}
- 		document.getElementById("#test").innerHTML = retorno;
+ 		document.getElementById("test").innerHTML = retorno;
  	}
 
- 	$("button").click(printMyObj(myObj));
 
 	objeto = JSON.parse(text);
 	function printObjectData(objeto){

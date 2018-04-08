@@ -1,8 +1,12 @@
 $(document).ready(function(){
-	$('button').on('click', mostrarMensaje());
+	$('button').on('click', aplicarEstilo());
 });
 
 function mostrarMensaje(){
-	$('div h1').css("background-color", "yellow");
 	alert('Hola Mundo!');
+}
+function aplicarEstilo(){
+	$('div h1').css('background-color', 'blue');
+	$('div').css('border','1px solid black');
+	$('div').css('padding','10px');
 }

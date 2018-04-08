@@ -3,5 +3,6 @@ $(document).ready(function(){
 });
 
 function mostrarMensaje(){
+	$('div h1').css("background-color", "yellow");
 	alert('Hola Mundo!');
 }

@@ -9,4 +9,7 @@ function aplicarEstilo(){
 	$('div h1').css('background-color', 'blue');
 	$('div').css('border','1px solid black');
 	$('div').css('padding','10px');
+	$('div h1').hover(function(){
+		$(this).css('background-color', 'yellow');
+	});
 }

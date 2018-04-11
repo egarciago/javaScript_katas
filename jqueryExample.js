@@ -6,10 +6,11 @@ function mostrarMensaje(){
 	alert('Hola Mundo!');
 }
 function aplicarEstilo(){
-	$('div h1').css('background-color', 'blue');
-	$('div').css('border','1px solid black');
-	$('div').css('padding','10px');
-	$('div h1').hover(function(){
-		$(this).css('background-color', 'yellow');
+	var estilo = $.noConflict();
+	estilo('div h1').css('background-color', 'blue');
+	estilo('div').css('border','1px solid black');
+	estilo('div').css('padding','10px');
+	estilo('div h1').hover(function(){
+		estilo(this).css('background-color', 'yellow');
 	});
 }

@@ -3,7 +3,7 @@ $(document).ready(function(){
 });
 
 function mostrarMensaje(){
-	alert('Hola Mundo!');
+	alert('#myinput');
 }
 function aplicarEstilo(){
 	var estilo = $.noConflict();
